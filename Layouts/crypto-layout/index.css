@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  color: wheat;
+}
+
+.website {
+  display: flex;
+}
+
+p {
+  font-weight: 500;
+}
+
+.main-container {
+  background: black;
+  /* height: 100vh; */
+  width: 80%;
+}
+
+.header-container {
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topdrop-info {
+  background: grey;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.currentdrop-info {
+  background: grey;
+  margin: 2%;
+  margin-right: 20%;
+  border-radius: 10px;
+}
+
+.currentdrop-info > p {
+  padding: 2%;
+}
+
+.topdrop-info > p {
+  padding: 2%;
+}
+
+.heading {
+  width: 100%;
+  height: 2rem;
+  background: rgb(54, 53, 53);
+  display: table;
+  border-radius: 5px;
+}
+
+.current-head {
+  width: 100%;
+  height: 2rem;
+  background: rgb(54, 53, 53);
+  display: table;
+  border-radius: 5px;
+}
+
+.current-head > h3 {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 4%;
+}
+
+.heading > h3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.view-all {
+  background: rgb(54, 53, 53);
+  margin: 2%;
+  padding: 2%;
+  display: table;
+  max-width: 30%;
+}
+
+.view-all > h3 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.content-container {
+  background: red;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.gainers-container {
+  width: 20%;
+  background: chartreuse;
+}
+
+@media screen and (max-width: 600px) {
+  .website {
+    flex-direction: column;
+  }
+
+  .gainers-container {
+    width: 100%;
+  }
+
+  .currentdrop-info {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .header-container {
+    flex-direction: column;
+  }
+
+  .view-all {
+    align-self: center;
+  }
+}

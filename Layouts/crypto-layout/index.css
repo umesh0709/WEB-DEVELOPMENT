@@ -4,9 +4,35 @@
   font-family: 'Roboto Slab', serif;
   color: wheat;
 }
+nav{
+    background-color: black;
+    padding: 1%;
+    padding-bottom: 0.5%;
+}
 
-.website {
-  display: flex;
+li{
+    list-style: none;
+    margin: 0 3% 0 3%;
+    
+}
+.navbar-container {
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+.nav-list{
+}
+
+
+.website-name {
+    text-align: center;
+}
+
+.website{
+    display: flex;
 }
 
 p {
@@ -15,8 +41,9 @@ p {
 
 .main-container {
   background: black;
-  /* height: 100vh; */
   width: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-container {
@@ -34,10 +61,10 @@ p {
 }
 
 .currentdrop-info {
-  background: grey;
-  margin: 2%;
-  margin-right: 20%;
-  border-radius: 10px;
+    background: grey;
+    margin: 2%;
+    margin-right: 20%;
+    border-radius: 10px;
 }
 
 .currentdrop-info > p {
@@ -91,24 +118,59 @@ p {
 }
 
 .content-container {
-  background: red;
-  width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+    background: red;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .gainers-container {
-  width: 20%;
-  background: chartreuse;
+    width: 20%;
+    background: chartreuse;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
+
+.trending-coins {
+    background-color: #003366;
+    border-radius: 10px;
+    padding: 4%;
+}
+
+.side-box {
+    /* width: 60%;
+    margin: 20px;
+    padding: 2%;*/
+    max-width: 550px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.email-container{
+    text-align: center;
+    width: 100%;
+    background-color: aqua;
+    padding: 2%;
+    
+}
+
+.emailtext, .emailadd, .emailsubmit{
+    margin: 3px;
+}
+
 
 @media screen and (max-width: 600px) {
   .website {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .gainers-container {
     width: 100%;
+    flex-wrap:wrap;
   }
 
   .currentdrop-info {
@@ -128,4 +190,9 @@ p {
   .view-all {
     align-self: center;
   }
+}
+
+footer {
+    width: 100%;
+    background-color: gray;
 }
